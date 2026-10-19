@@ -1,0 +1,16 @@
+numpy
+pandas
+pyarrow
+scikit-learn
+matplotlib
+tqdm
+pillow
+torch
+torchvision
+transformers
+datasets
+huggingface_hub
+tensorflow
+open_clip_torch
+faiss-cpu
+optuna
