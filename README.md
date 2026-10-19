@@ -35,6 +35,8 @@ OpenPMC (streamed) → filter modality = radiology → label X-ray / CT from cap
 
 ### Task 1: MedSigLIP, X-ray vs CT
 
+![MedSigLIP classification results](assets/classification_results.png)
+
 | Model | Accuracy | Macro-F1 | X-ray recall | CT recall |
 |---|---|---|---|---|
 | Zero-shot | 0.882 | 0.798 | 0.57 | 0.96 |
@@ -43,6 +45,8 @@ OpenPMC (streamed) → filter modality = radiology → label X-ray / CT from cap
 Zero-shot is biased toward the majority class (CT). Fine-tuning mainly recovers X-ray sensitivity (15 of 21 X-rays found vs 12) at the cost of one CT image, a net gain of two correctly classified images, so the difference is within noise on this test set.
 
 ### Task 2: BiomedCLIP, caption retrieval
+
+![BiomedCLIP retrieval results](assets/retrieval_results.png)
 
 | Config | I2T R@1 | I2T R@5 | I2T R@10 | I2T MRR | T2I MRR |
 |---|---|---|---|---|---|
